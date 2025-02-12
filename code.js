@@ -1,16 +1,14 @@
-function insertionSortReverse(array) {
-    if (array.length == 0)
-    {
-        return array;
+function insertionSort(arr) {
+    if (arr.length == 0)
+        return arr;
+    
+  for(var i = (arr.length - 1); i > 1; i--) {
+    var val = arr[i];
+    var j;
+    for(j = 0; j < arr.length && arr[j + 1] < val; j++) {
+      arr[j] = arr[j + 1];
     }
-    for(var i = (array.length - 1); i > 0; i--)
-        {
-            var val = array[i];
-            for(var j = 0; j >= 0 && array[j] < val; j++)
-                {
-                    array[j + 1] = array[j];
-                }
-            array[j + 1] = val;
-        }
-    return array;
+    arr[j] = val;
+  }
+  return arr;
 }
