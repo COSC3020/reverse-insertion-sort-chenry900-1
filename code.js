@@ -1,4 +1,4 @@
-function insertionSort(arr) {
+function insertionSortReverse(arr) {
     if (arr.length == 0)
         return arr;
     
