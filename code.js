@@ -4,8 +4,8 @@ function insertionSortReverse(arr) {
     
   for (var i = arr.length - 1; i >= 1; i--) {
       var val = arr[i];
-      for(var j = i; j < arr.length && arr[j - 1] > val && j > 0; j++) {
-          arr[j] = arr[j - 1];
+      for(var j = i + 1; j < arr.length && arr[j] > val; j++) {
+          arr[j - 1] = arr[j];
       }
       if (j > 0)
           arr[j - 1] = val
