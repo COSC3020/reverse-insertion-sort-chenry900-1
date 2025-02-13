@@ -7,7 +7,8 @@ function insertionSortReverse(arr) {
       for(var j = i; j < arr.length && arr[j - 1] > val; j++) {
           arr[j] = arr[j - 1];
       }
-      arr[j - 1] = val;
+      if (j >= 0)
+          arr[j - 1] = va
   }
   return arr;
 }
