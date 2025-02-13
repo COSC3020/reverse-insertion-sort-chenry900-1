@@ -8,7 +8,7 @@ function insertionSortReverse(arr) {
           arr[j] = arr[j - 1];
       }
       if (j > 0)
-          arr[j - 1] = va
+          arr[j - 1] = val
   }
   return arr;
 }
